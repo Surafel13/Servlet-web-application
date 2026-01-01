@@ -17,7 +17,7 @@ A professional, high-end Java Web Application for managing student registrations
 - **Backend**: Java 11+, Java Servlets, JDBC, Maven.
 - **Frontend**: HTML5, CSS3 (Glassmorphism), JavaScript (ES6).
 - **Database**: MySQL 8.0+.
-- **Server**: Apache Tomcat 9 or 10.
+- **Server**: Apache Tomcat 9.
 
 ---
 
@@ -59,24 +59,3 @@ Once deployed, open your browser and navigate to:
 
 ---
 
-## 📂 Project Structure
-```text
-Student Registration/
-├── src/main/java/              # Java Source Code (MVC)
-│   ├── com.student.model       # Student POJO
-│   ├── com.student.servlet     # Control Logic (Registration/Show)
-│   └── com.student.util        # JDBC Configuration
-├── src/main/webapp/            # UI Resources
-│   ├── css/                    # Glassmorphism Styles
-│   ├── js/                     # Loaders and Animations
-│   ├── index.jsp               # Registration Page
-│   └── all_students.jsp        # Student List Table
-├── setup_db.sql                # Database Schema
-├── pom.xml                     # Maven Dependencies
-└── README.md                   # You are here!
-```
-
----
-
-## 📝 Author
-Built with ❤️ by Antigravity.
