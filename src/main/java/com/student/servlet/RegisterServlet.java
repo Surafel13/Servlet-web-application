@@ -51,7 +51,7 @@ public class RegisterServlet extends HttpServlet {
                 }
             } catch (SQLException e) {
                 // Handle duplicate email or other DB errors
-                if (e.getSQLState().equals("23000")) {
+                if ("23000".equals(e.getSQLState())) {
                     request.setAttribute("error", "Email already registered.");
                 } else {
                     request.setAttribute("error", "Database error: " + e.getMessage());
