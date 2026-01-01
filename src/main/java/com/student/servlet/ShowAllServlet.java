@@ -15,10 +15,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Servlet to list all registered students.
- * Endpoint: /show_all
- */
+
 @WebServlet("/show_all")
 public class ShowAllServlet extends HttpServlet {
 
@@ -45,7 +42,6 @@ public class ShowAllServlet extends HttpServlet {
             request.setAttribute("error", "Database error: " + e.getMessage());
         }
 
-        // Pass students list to JSP
         request.setAttribute("students", students);
         request.getRequestDispatcher("all_students.jsp").forward(request, response);
     }
